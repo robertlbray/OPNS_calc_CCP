@@ -1,0 +1,21 @@
+#Note use of transpose to turn dataframe into list (to use map function)
+#Note use of reduce to turn list of dataframes into one big dataframe
+
+sim_values <-
+  . %>% {
+    tibble(
+      num = 1 + rpois(n = ., lambda = 3),
+      df = runif(n = ., min = .5, max = 2)
+    )
+  } %>% 
+  transpose %>% 
+  imap(~{
+    tibble(
+      trial = .y, 
+      choice.specific.value = rt(n = .x$num, df = .x$df)
+    )
+  }) %>% 
+  reduce(bind_rows) %>% 
+  group_by(trial) %>% 
+  mutate(choice = row_number()) %>% 
+  ungroup

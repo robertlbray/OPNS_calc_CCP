@@ -1,0 +1,12 @@
+test_CCPs <- function() {
+  readRDS(paste0(var_save, 'CCPs.rds')) %>% {
+    print('NA elements:')
+    filter(., is.na(CCP)) %>% 
+      print
+    
+    print('Sum CCP distribution:')
+    group_by(., choice) %>% 
+      summarise(sum.CCP = sum(CCP)) %>% 
+      summary
+  } 
+}

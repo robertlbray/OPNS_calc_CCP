@@ -1,0 +1,4 @@
+data_frame(
+  num = 1 + rpois(n = num.choices, lambda = 3),
+  df = runif(n = num.choices, min = .5, max = 2)
+)

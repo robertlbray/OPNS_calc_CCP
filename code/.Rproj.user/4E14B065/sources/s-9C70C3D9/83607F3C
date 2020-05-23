@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1508195867713.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "83607F3C",
+    "lastKnownWriteTime" : 1590256257,
+    "last_content_update" : 1590256257480,
+    "path" : "~/Dropbox/teaching/OPNS523/assignments/OPNS_calc_CCP/solution/code/header.R",
+    "project_path" : "header.R",
+    "properties" : {
+        "cursorPosition" : "4,24",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

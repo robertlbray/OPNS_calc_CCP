@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1509390384212.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "713948F3",
+    "lastKnownWriteTime" : 1590258791,
+    "last_content_update" : 1590258791738,
+    "path" : "~/Dropbox/teaching/OPNS523/assignments/OPNS_calc_CCP/solution/code/modules/calc_CCP.R",
+    "project_path" : "modules/calc_CCP.R",
+    "properties" : {
+        "cursorPosition" : "8,11",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

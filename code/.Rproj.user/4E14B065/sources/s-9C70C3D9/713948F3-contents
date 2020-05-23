@@ -1,0 +1,9 @@
+calc_CCP <- 
+  . %>% 
+    group_by(trial) %>% 
+    mutate(
+      CCP = choice.specific.value - max(choice.specific.value),
+      CCP = exp(CCP),
+      CCP = CCP/sum(CCP)
+    ) %>% 
+    ungroup

@@ -1,0 +1,22 @@
+data_frame(
+  num = 1 + rpois(n = num.choices, lambda = 3),
+  df = runif(n = num.choices, min = .5, max = 2)
+) %>% 
+  rownames_to_column %>% 
+  by_row(
+    ~rt(n = .$num, df = .$df),
+    .collate = 'rows'
+  ) %>%
+  select(rowname, .out) %>% 
+  rename(
+    choice = 'rowname',
+    choice.specific.value = '.out'
+  ) %>% 
+  group_by(choice) %>% 
+  mutate(
+    CCP = choice.specific.value - max(choice.specific.value),
+    CCP = exp(CCP),
+    CCP = CCP/sum(CCP)
+  ) %>% 
+  ungroup %>% 
+  saveRDS(paste0(var_save, 'CCPs.rds'))

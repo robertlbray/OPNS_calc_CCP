@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1509390475332.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "97E8F29A",
+    "lastKnownWriteTime" : 1590258622,
+    "last_content_update" : 1590258622152,
+    "path" : "~/Dropbox/teaching/OPNS523/assignments/OPNS_calc_CCP/solution/code/modules/sim_values.R",
+    "project_path" : "modules/sim_values.R",
+    "properties" : {
+        "cursorPosition" : "4,4",
+        "scrollLine" : "1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

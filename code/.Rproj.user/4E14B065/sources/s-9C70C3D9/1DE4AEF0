@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1509392151328.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3243389858",
+    "id" : "1DE4AEF0",
+    "lastKnownWriteTime" : 1590258974,
+    "last_content_update" : 1590258974055,
+    "path" : "~/Dropbox/teaching/OPNS523/assignments/OPNS_calc_CCP/solution/code/m.R",
+    "project_path" : "m.R",
+    "properties" : {
+        "cursorPosition" : "6,0",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
