@@ -4,15 +4,15 @@
 sim_values <-
   . %>% {
     tibble(
-      num = 1 + rpois(n = ., lambda = 3),
-      df = runif(n = ., min = .5, max = 2)
+      num = 1 + rpois(.$num.trials, .$lambda),
+      df = runif(.$num.trials, .$df.min, .$df.max)
     )
   } %>% 
   transpose %>% 
   imap(~{
     tibble(
       trial = .y, 
-      choice.specific.value = rt(n = .x$num, df = .x$df)
+      csv = rt(n = .x$num, df = .x$df)
     )
   }) %>% 
   reduce(bind_rows) %>% 

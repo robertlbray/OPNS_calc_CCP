@@ -1,0 +1,15 @@
+calc_CCP <- 
+  . %>% 
+    group_by(trial) %>% 
+    mutate(
+      CCP = csv - max(csv),
+      CCP = exp(CCP),
+      CCP = CCP/sum(CCP)
+    ) %>% 
+    ungroup
+
+cals_inclusive_values <-
+  . %>% 
+  group_by(trial) %>% 
+  summarise(iv = max(csv) + log(sum(exp(csv - max(csv))))) %>% 
+  ungroup
